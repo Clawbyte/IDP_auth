@@ -14,4 +14,4 @@
 * Added token verification
 
 ## Technologies
-Express, Typescript, Docker, Docker Compose
+Express, Typescript, Docker, Docker Compose, Docker Swarm, Kong
