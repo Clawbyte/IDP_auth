@@ -1,10 +1,11 @@
 services:
-  backend:
+  auth-backend:
     build: ./auth-backend
     ports:
       - "3001:3001"
     environment:
-      - IO_URL=http://idp_io-backend-1:3000
+      - IO_URL=http://io-backend:3000
+      - JWT_SECRET=IDP2025
     networks:
       - app-network
 
