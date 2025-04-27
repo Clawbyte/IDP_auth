@@ -1,6 +1,6 @@
 services:
   auth-backend:
-    build: ./auth-backend
+    image: auth-backend:latest
     ports:
       - "3001:3001"
     environment:
@@ -9,6 +9,14 @@ services:
     networks:
       - app-network
       - kong-net
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          memory: 1g
+          cpus: "1"
 
 networks:
   app-network:
