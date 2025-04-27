@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: ./auth-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - IO_URL=http://idp_io-backend-1:3000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true

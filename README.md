@@ -1,2 +1,8 @@
-# IDP_auth
-IDP project: microservice for authentication
+# IDP project: microservice for authentication
+
+## Usage
+
+## Functionality
+* Added register route with username and password
+
+## Technologies
