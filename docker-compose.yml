@@ -1,6 +1,6 @@
 services:
   auth-backend:
-    image: auth-backend:latest
+    image: clawbyte/auth-backend:latest
     ports:
       - "3001:3001"
     environment:
